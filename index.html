@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пісочниця</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <br />
+    <p class="text">Привіт котики, як ваші справи?</p>
+
+    <p class="text">Пісофшетниця</p>
+    <p class="text">Конспект Репети (16 серпня 2022)</p>
+
+    Обычно так делается:
+    <br />
+    <form class="js-speaker-form">
+      <label for="name">Имя</label>
+      <input type="text" name="user-name" id="name" />
+    </form>
+
+    <br />
+    Но можно так
+    <br />
+    <form class="js-speaker-form">
+      <label>
+        Имя
+        <input type="text" name="name" />
+      </label>
+    </form>
+    <br />
+    Tel - это одно из значений
+    <form class="js-speaker-form">
+      <label for="tel">Телефон</label>
+      <input type="text" name="tel" id="tel" />
+      <br />
+      <p>Сабмит - это отправка. = это кнопка для отправки формы</p>
+
+      <br />
+
+      <label for="mail">Почта</label>
+      <input type="email" name="mail" id="mail" />
+
+      <button type="submit">Оставить заявку</button>
+      <p>есть ещё такая штука:</p>
+      <input type="button" value="Оставить заявку" />
+    </form>
+    <br />
+    чекбоксы - нужно чтобы имя было одно и тоже = топик = а не топик 1 2 3 как в
+    примере :
+    <br />
+    <input type="checkbox" name="topic 1" value="html" id="html" />
+    <label for="html">HTML</label>
+    <input type="checkbox" name="topic 2" value="css" id="css" />
+    <label for="css">CSS</label>
+    <input type="checkbox" name="topic 3" value="se" id="se" />
+    <label for="se">Something else</label>
+    <br />
+    есть очень класный Филдсет = очень семантический )))
+    <br />
+    = группа элементов = одно свойство описывают
+    <br />
+    <fieldset>
+      <input type="checkbox" name="topic " value="html" id="html" />
+      <label for="html">HTML</label>
+      <input type="checkbox" name="topic " value="css" id="css" />
+      <label for="css">CSS</label>
+      <input type="checkbox" name="topic " value="se" id="se" />
+      <label for="se">Something else</label>
+    </fieldset>
+
+    Но лучше радиобатон
+
+    <input type="radio" name="experience" value="junior" />
+    <label for="junior">Junior</label>
+    <input type="radio" name="experience" value="middle" />
+    <label for="junior">Middle</label>
+    <input type="radio" name="experience" value="senior" />
+    <label for="junior">Senior</label>
+    <button type="submit">Оставить заявку</button>
+    <br />
+    <input type="time" name="time" id="" />
+
+    <br />
+    <input type="datetime-local" name="time" id="" />
+    <br />
+    <br />
+
+    <img src="" alt="" />
+
+    <img
+      src="./images/2022-08-16/001.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <img
+      src="./images/2022-08-16/002.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <img
+      src="./images/2022-08-16/003.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <form class="modal-form">
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> ім'я*
+        <input type="text" class="modal-form-input" />
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Телефон*
+        <input type="text" class="modal-form-input" />
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Сообщєніє
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="modal-form-message"
+          placeholder="Напиши шось, братан"
+        ></textarea>
+      </label>
+      <input type="text" class="modal-form-check" />
+    </form>
+    <img
+      src="./images/2022-08-16/004.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <img
+      src="./images/2022-08-16/005.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <img
+      src="./images/2022-08-16/006.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <form class="modal-form">
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> ім'я*
+        <input type="text" class="modal-form-input" />
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Телефон*
+        <input type="text" class="modal-form-input" />
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Сообщєніє
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="modal-form-message"
+          placeholder="Напиши шось, братан"
+        ></textarea>
+      </label>
+      <input id="user-fuck-the-police" type="text" class="modal-form-check" />
+      <label for="user-fuck-the-police" class="modal-form-check-desk"
+        >Так, я прочитав ті багато літер <a href="">Шось десь</a>
+      </label>
+      <button class="modal-form-submit"></button>
+    </form>
+    <img
+      src="./images/2022-08-16/007.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+
+    <img
+      src="./images/2022-08-16/008.png"
+      alt="Скорочення Спан Модал бла бла бла"
+    />
+    <p class="text">Проставляємо правильні артібути з атрібутами ))))  нашим елементам форми
+
+         </p> 
+         Наприклад якщо ТЕЛ = у користувача
+             </p>
+             зміниться розкладка клавіатури
+
+    </p>
+
+    <img src="./images/2022-08-16/009.png" alt="Зображення для конспекту" />
+
+    <form class="modal-form">
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> ім'я*
+        <input 
+        type="text" 
+        name="user_name" 
+        class="modal-form-input" 
+        required pattern="^[a-zA-Za-яА-Я]+$"
+        minlength="2" не більше двух символів
+        />
+        
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Телефон*
+        <input type="tel" name="user_phone" class="modal-form-input" required/>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Сообщєніє
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="modal-form-message"
+          placeholder="Напиши шось, братан"
+        ></textarea>
+      </label>
+      <input id="user-fuck-the-police" type="text" class="modal-form-check" />
+      <label for="user-fuck-the-police" class="modal-form-check-desk"
+        >Так, я прочитав ті багато літер <a href="">Шось десь</a>
+      </label>
+      <button type="submit" class="modal-form-submit">Відправити</button>
+    </form>
+ <p class="text">Ще є "Захист від дурника" = щоб
+  користувач не міг відправити порожню форму = для цього Є = required (дизайнер показав зірочками)
+  
+<img src="./images/2022-08-16/010.png" alt="Зображення для конспекту" />
+         </p> 
+
+         ще є така штука = 
+         ми ввели діапазони. Тепер, наприклад, користувач не може ввести цифри - тільки літери = діапазон символів тут:
+
+           
+<img src="./images/2022-08-16/011.png" alt="Зображення для конспекту" />
+         </p> 
+
+         <img src="./images/2022-08-16/012.png" alt="Зображення для конспекту" />
+
+         <p class="text">PAUSE
+
+          <img src="./images/2022-08-16/013.png" alt="Зображення для конспекту" />
+
+
+
+
+
+
+         </p>
+
+
+
+  </body>
+</html>
