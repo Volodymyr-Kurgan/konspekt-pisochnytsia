@@ -10,3 +10,34 @@
   border: 1px solid aqua;
   padding: 10px;
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-field {
+  margin-bottom: 16px;
+}
+
+.modal-form-input-desc {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.1666666667;
+  margin-bottom: 8px;
+  color: #303030;
+}
+
+.shotam {
+  width: 500px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color var(--transition-dur-and-func);
+}

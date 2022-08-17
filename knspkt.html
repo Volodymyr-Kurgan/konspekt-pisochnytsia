@@ -25,7 +25,7 @@
     <!-- HEADER -->
     <header class="header content">
       <div class="container nav">
-        <a href="" class="logo link"> <span class="accent">Web</span>Studio</a>
+        <a href="./knspkt.html" class="logo link"> <span class="accent">Web</span>Studio</a>
         <nav class="menu">
           <ul class="menu-list list">
             <li class="menu-item">
@@ -151,7 +151,13 @@
       alt="Скорочення Спан Модал бла бла бла"
     />
     
+     <p class="text"> трошки Олексія у наше життя
+</p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NBvJEX0XUlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+   
 
     <img src="" alt="" />
 
@@ -179,6 +185,9 @@
       src="./images/2022-08-16/006.png"
       alt="Скорочення Спан Модал бла бла бла"
     />
+
+
+  
     <form class="modal-form">
       <label class="modal-form-field">
         <span class="modal-form-input-desc"></span> ім'я*
@@ -188,6 +197,8 @@
         <span class="modal-form-input-desc"></span> Телефон*
         <input type="text" class="modal-form-input" />
       </label>
+
+   
       <label class="modal-form-field">
         <span class="modal-form-input-desc"></span> Сообщєніє
         <textarea
@@ -204,7 +215,13 @@
         >Так, я прочитав ті багато літер <a href="">Шось десь</a>
       </label>
       <button class="modal-form-submit"></button>
+   
     </form>
+   
+
+
+
+
     <img
       src="./images/2022-08-16/007.png"
       alt="Скорочення Спан Модал бла бла бла"
@@ -222,8 +239,35 @@
              зміниться розкладка клавіатури
 
     </p>
+ <p class="text">Ще є "Захист від дурника" = щоб
+  користувач не міг відправити порожню форму = для цього Є = required (дизайнер показав зірочками)
+  
+<img src="./images/2022-08-16/010.png" alt="Зображення для конспекту" />
+         </p> 
 
-    <img src="./images/2022-08-16/009.png" alt="Зображення для конспекту" />
+         <p class="text"> ще є така штука = 
+         ми ввели діапазони. Тепер, наприклад, користувач не може ввести цифри - тільки літери = діапазон символів тут:
+
+            </p>
+         
+
+         <img src="./images/2022-08-16/012.png" alt="Зображення для конспекту" />
+для телефону:      
+         <img src="./images/2022-08-17/001.png" alt="Зображення для конспекту" />
+вказуємо в якому форматі:        
+         <img src="./images/2022-08-17/002.png" alt="Зображення для конспекту" />
+текстерія = нейм = юзер-меседж:         
+         <img src="./images/2022-08-17/003.png" alt="Зображення для конспекту" />
+ширину та висоту за замовчування видаляємо:
+           <img src="./images/2022-08-17/004.png" alt="Зображення для конспекту" />
+PAUSE
+           <img src="./images/2022-08-17/005.png" alt="Зображення для конспекту" />
+
+  
+  
+              <div>
+                
+              </div>
 
     <form class="modal-form">
       <label class="modal-form-field">
@@ -239,45 +283,31 @@
       </label>
       <label class="modal-form-field">
         <span class="modal-form-input-desc"></span> Телефон*
-        <input type="tel" name="user_phone" class="modal-form-input" required/>
+        <input 
+        type="tel" 
+        name="user_phone" 
+        class="modal-form-input" 
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        />
       </label>
       <label class="modal-form-field">
         <span class="modal-form-input-desc"></span> Сообщєніє
         <textarea
-          name=""
+          name="user_message"
           id=""
-          cols="30"
-          rows="10"
+       
           class="modal-form-message"
           placeholder="Напиши шось, братан"
         ></textarea>
       </label>
-      <input id="user-fuck-the-police" type="text" class="modal-form-check" />
+      <input id="user-fuck-the-police" type="checkbox" name="use r-fuck-the-police" class="modal-form-check" />
       <label for="user-fuck-the-police" class="modal-form-check-desk"
         >Так, я прочитав ті багато літер <a href="">Шось десь</a>
       </label>
       <button type="submit" class="modal-form-submit">Відправити</button>
     </form>
- <p class="text">Ще є "Захист від дурника" = щоб
-  користувач не міг відправити порожню форму = для цього Є = required (дизайнер показав зірочками)
-  
-<img src="./images/2022-08-16/010.png" alt="Зображення для конспекту" />
-         </p> 
-
-         ще є така штука = 
-         ми ввели діапазони. Тепер, наприклад, користувач не може ввести цифри - тільки літери = діапазон символів тут:
-
-           
-<img src="./images/2022-08-16/011.png" alt="Зображення для конспекту" />
-         </p> 
-
-         <img src="./images/2022-08-16/012.png" alt="Зображення для конспекту" />
-
-
-
-         
-
-
 
 
       </div>
@@ -307,6 +337,67 @@
           </ul>
         </div>
       </section>
+            <!-- HERO (hero = background) -->
+      <section class="her"> 
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="modal-btn-open" type="button" data-modal-open>
+            Заказать услугу
+          </button>
+
+
+          
+        </div>
+      </section>
     </main>
+        <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="modal-button-icon-close">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+         <form class="modal-form">
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> ім'я*
+        <input 
+        type="text" 
+        name="user_name" 
+        class="modal-form-input" 
+        required pattern="^[a-zA-Za-яА-Я]+$"
+        minlength="2" не більше двух символів
+        />
+        
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Телефон*
+        <input 
+        type="tel" 
+        name="user_phone" 
+        class="modal-form-input" 
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        />
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc"></span> Сообщєніє
+        <textarea
+          name="user_message"
+          id=""
+       
+          class="modal-form-message"
+          placeholder="Напиши шось, братан"
+        ></textarea>
+      </label>
+      <input id="user-fuck-the-police" type="text" class="modal-form-check" />
+      <label for="user-fuck-the-police" class="modal-form-check-desk"
+        >Так, я прочитав ті багато літер <a href="">Шось десь</a>
+      </label>
+      <button type="submit" class="modal-form-submit">Відправити</button>
+    </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
