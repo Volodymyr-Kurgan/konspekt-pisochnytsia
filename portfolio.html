@@ -366,7 +366,105 @@
             </li>
           </ul>
         </div>
+        <form class="mailing-list-form">
+          <label class="mailing-list-content">
+            <span class="mailing-list-tytle">Подпишитесь на рассылку</span>
+            <input
+              type="email"
+              name="E-mail"
+              placeholder="E-mail"
+              required=""
+              class="mailing-input"
+            />
+          </label>
+          <button type="submit" class="mailing-list-btn">Подписаться</button>
+        </form>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="modal-button-icon-close">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <form class="modal-form">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+          <label class="Name">
+            <span class="form-name">Имя</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                class="form-modal-input"
+                name="user-name"
+                required=""
+                autofocus=""
+                pattern="^[a-zA-Za-яА-Я]+$"
+              />
+              <svg class="form-modal-icon">
+                <use href="./images/sprite.svg#icon-m6man"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="telephone">
+            <span class="form-phone">Телефон</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                required=""
+                class="form-modal-input"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="form-modal-icon">
+                <use href="./images/sprite.svg#icon-m6phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="user-e-mail">
+            <span class="form-mail">Почта</span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user-e-mail"
+                required=""
+                class="form-modal-input"
+              />
+              <svg class="form-modal-icon">
+                <use href="./images/sprite.svg#icon-m6ev"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="comment">
+            <b class="comment-title">Комментарий</b>
+            <textarea
+              name="user_message"
+              placeholder="Введите текст"
+              class="modal-form-message"
+            ></textarea>
+          </label>
+
+          <label class="form-check-desc">
+            <input type="checkbox" name="agreement" class="check-input" />
+            <span class="icon-check-wrapper">
+              <svg class="icon-check" width="16" height="15">
+                <use href="./images/sprite.svg#icon-m6man"></use>
+              </svg>
+            </span>
+
+            <span class="agreement-title">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="agreement-link">Условия договора</a>
+            </span>
+          </label>
+
+          <button type="submit" class="modal-btn-send">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
