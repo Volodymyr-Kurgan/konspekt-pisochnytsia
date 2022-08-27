@@ -13,10 +13,10 @@
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
-}
 
-.hero > .container {
-  text-align: center;
+  & > .container {
+    text-align: center;
+  }
 }
 
 .portfolio-btn {
@@ -54,10 +54,10 @@
 
 .features-item {
   width: 270px;
-}
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .portfolio-item + .portfolio-item {

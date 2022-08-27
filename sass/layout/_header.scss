@@ -37,10 +37,13 @@
   letter-spacing: 0.02em;
   color: var(--secondary-dark-color);
   /* outline: 1px solid red; */
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.menu-link:hover,
-.menu-link:focus,
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-phone:hover,
@@ -121,11 +124,10 @@
 .phone-ref {
   display: flex;
   align-items: center;
-}
-
-.phone-ref:hover,
-.phone-ref:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .phone-icon {

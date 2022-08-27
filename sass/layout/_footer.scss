@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  & .logo {
+    margin-bottom: 20px;
+  }
 }
 
 .map-link {
@@ -31,9 +35,6 @@
 
 .studio {
   color: var(--main-light-color);
-}
-.footer .logo {
-  margin-bottom: 20px;
 }
 
 .adress-list > .item:not(:last-child) {
@@ -76,17 +77,17 @@
   display: block;
   text-decoration: none;
   transition: box-shadow var(--timing-duration) var(--timing-function);
-}
 
-.exemple-link:hover,
-.exemple-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
-.exemple-link:hover .box-content,
-.exemple-link:focus .box-content {
-  transform: translateY(0%);
+  &:hover .box-content,
+  &:focus .box-content {
+    transform: translateY(0%);
+  }
 }
 
 .box-overlay {
@@ -128,9 +129,9 @@
 .in-footer {
   background: rgba(255, 255, 255, 0.1);
   color: var(--main-light-color);
-}
 
-.in-footer:hover,
-.in-footer:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

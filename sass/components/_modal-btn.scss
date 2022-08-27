@@ -1,9 +1,3 @@
-.modal-btn-open:hover,
-.modal-btn-open:focus {
-  color: var(--main-light-color);
-  background-color: #188ce8;
-}
-
 .modal-btn-open {
   transition-property: background-color;
   transition-duration: var(--timing-duration);
@@ -21,6 +15,12 @@
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    color: var(--main-light-color);
+    background-color: #188ce8;
+  }
 }
 
 .modal-btn-close {

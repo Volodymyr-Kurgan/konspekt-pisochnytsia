@@ -10,12 +10,12 @@
   display: flex;
   justify-content: center;
 }
-.about-item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .about-item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-label-wraper {

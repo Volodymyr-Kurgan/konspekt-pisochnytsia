@@ -18,6 +18,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-pos {
@@ -27,10 +31,6 @@
 .team-list {
   display: flex;
   justify-content: center;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .social-network {
@@ -52,12 +52,12 @@
   height: 44px;
   justify-content: center;
   align-items: center;
-}
 
-.social-network-link:hover,
-.social-network-link:focus {
-  background-color: var(--accent-color);
-  color: var(--main-light-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-light-color);
+  }
 }
 
 .social-network-icon {
