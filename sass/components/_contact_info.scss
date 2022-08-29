@@ -1,0 +1,32 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.contacts__link {
+  transition-property: color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+  font-family: var(--main-font-family);
+  @include fonts($weight: 500, $lh: 16px);
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+
+.contacts__icon {
+  margin-right: 10px;
+  order: -1;
+  align-self: center;
+  fill: currentColor;
+
+ }

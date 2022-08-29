@@ -1,0 +1,19 @@
+.logo {
+  font-family: var(--secondary-font-family);
+  @include fonts(26px, 700, 31px);
+  color: var(--main-dark-color);
+  letter-spacing: 0.03em;
+  display: block;
+
+  &__accent {
+    color: var(--accent-color);
+  }
+}
+
+.logo--theme-dark {
+  color: var(--main-light-color);
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+}

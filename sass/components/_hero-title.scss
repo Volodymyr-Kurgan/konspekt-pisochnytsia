@@ -1,0 +1,10 @@
+.hero__title {
+  @include fonts($size: 44px, $weight: 900, $lh: 60px);
+  width: 700px;
+  letter-spacing: 0.06em;
+  color: var(--main-light-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
