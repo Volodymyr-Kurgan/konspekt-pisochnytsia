@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
+    <title>Студія</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -12,8 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,11 +44,21 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="mobile-menu-open"
+          aria-label="Кнопка для відкриття мобільного меню"
+          data-menu-open
+        >
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./image/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com"
               >info@devstudio.com
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__icon contacts__icon--mail">
                 <use href="./image/icons.svg#envelope"></use>
               </svg>
             </a>
@@ -57,36 +66,94 @@
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111"
               >+380961111111
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon contacts__icon--phone">
                 <use href="./image/icons.svg#smartphone"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button
+            class="mobile-menu__close-btn"
+            aria-label="Кнопка для закриття мобільного меню"
+            data-menu-close
+          >
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./image/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu__item">
+              <a
+                href="./index.html"
+                class="mobile-menu__link mobile-menu__link--сurrent"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a
+                class="mobile-contacts__link mobile-contacts__link--phone"
+                href="tel:+380961111111"
+                >+380961111111
+              </a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="hero-btn" type="button" data-modal-open>
-            Заказать услугу
+            Замовити послугу
           </button>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <h2 class="section__title visually-hidden">Преимущества</h2>
-          <ul class="benefits list">
+          <h2 class="section__title visually-hidden">Особливості</h2>
+          <ul class="benefits">
             <li class="benefits__item">
               <div class="benefits__icon-wrapper">
                 <svg class="benefits__icon">
                   <use href="./image/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="benefits__title">Увага до деталей</h3>
               <p class="benefits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -98,7 +165,7 @@
                   <use href="./image/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="benefits__title">Пунктуальність</h3>
               <p class="benefits__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -110,7 +177,7 @@
                   <use href="./image/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+              <h3 class="benefits__title">Планування</h3>
               <p class="benefits__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -121,7 +188,7 @@
                   <use href="./image/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="benefits__title">Сучасні технології</h3>
               <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -136,42 +203,139 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="actyvity">
             <li class="actyvity__item">
-              <img src="./image/box1.jpg" alt="work on computer" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/activity1/activity1.webp    1x,
+                    ./image/img/desktop/activity1/activity1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./image/img/desktop/activity1/activity1@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img
+                  src="./image/img/desktop/activity1/activity1.jpg"
+                  alt="work on computer"
+                />
+              </picture>
+
               <div class="actyvity__wraper">
-                <p class="actyvity-label">Десктопные приложения</p>
+                <p class="actyvity__label">Десктопні додатки</p>
               </div>
             </li>
             <li class="actyvity__item">
-              <img
-                src="./image/box2.jpg"
-                alt="download from phone to computer"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/activity2/activity2.webp    1x,
+                    ./image/img/desktop/activity2/activity2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./image/img/desktop/activity2/activity2@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img
+                  src="./image/img/desktop/activity2/activity2.jpg"
+                  alt="download from phone to computer"
+                />
+              </picture>
+
               <div class="actyvity__wraper">
-                <p class="actyvity-label">Мобильные приложения</p>
+                <p class="actyvity__label">Мобільні додатки</p>
               </div>
             </li>
             <li class="actyvity__item">
-              <img
-                src="./image/box3.jpg"
-                alt="working on planshet"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/activity3/activity3.webp    1x,
+                    ./image/img/desktop/activity3/activity3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./image/img/desktop/activity3/activity3@2x.jpg 2x"
+                  type="image/webp"
+                />
+                <img
+                  src="./image/img/desktop/activity3/activity3.jpg"
+                  alt="working on planshet"
+                />
+              </picture>
+
               <div class="actyvity__wraper">
-                <p class="actyvity__label">Дизайнерские решения</p>
+                <p class="actyvity__label">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
       <section class="section section--team-background">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./image/emp1.jpg" alt="Product Designer" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/team1-desktop/team1-desktop.webp    1x,
+                    ./image/img/desktop/team1-desktop/team1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/desktop/team1-desktop/team1-desktop.jpg    1x,
+                    ./image/img/desktop/team1-desktop/team1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/tablet/team1-tablet/team1-tablet.webp    1x,
+                    ./image/img/tablet/team1-tablet/team1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/tablet/team1-tablet/team1-tablet.jpg    1x,
+                    ./image/img/tablet/team1-tablet/team1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/mobile/team1-mobile/team1-mobile.webp    1x,
+                    ./image/img/mobile/team1-mobile/team1-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/mobile/team1-mobile/team1-mobile.jpg    1x,
+                    ./image/img/mobile/team1-mobile/team1-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/img/mobile/team1-mobile/team1-mobile.jpg"
+                  alt="Product Designer"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
-                <h3 class="team-list__title">Игорь Демьяненко</h3>
+                <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text" lang="en">Product Designer</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -207,13 +371,62 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./image/emp2.jpg"
-                alt="Frontend Developer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/team2-desktop/team2-desktop.webp    1x,
+                    ./image/img/desktop/team2-desktop/team2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/desktop/team2-desktop/team2-desktop.jpg    1x,
+                    ./image/img/desktop/team2-desktop/team2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/tablet/team2-tablet/team2-tablet.webp    1x,
+                    ./image/img/tablet/team2-tablet/team2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/tablet/team2-tablet/team2-tablet.jpg    1x,
+                    ./image/img/tablet/team2-tablet/team2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/mobile/team2-mobile/team2-mobile.webp    1x,
+                    ./image/img/mobile/team2-mobile/team2-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/mobile/team2-mobile/team2-mobile.jpg    1x,
+                    ./image/img/mobile/team2-mobile/team2-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/img/mobile/team2-mobile/team2-mobile.jpg"
+                  alt="Marketing"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
-                <h3 class="team-list__title">Ольга Репина</h3>
+                <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -247,10 +460,64 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-list__item">
-              <img src="./image/emp3.jpg" alt="Marketing" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/team3-desktop/team3-desktop.webp    1x,
+                    ./image/img/desktop/team3-desktop/team3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/desktop/team3-desktop/team3-desktop.jpg    1x,
+                    ./image/img/desktop/team3-desktop/team3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/tablet/team3-tablet/team3-tablet.webp    1x,
+                    ./image/img/tablet/team3-tablet/team3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/tablet/team3-tablet/team3-tablet.jpg    1x,
+                    ./image/img/tablet/team3-tablet/team3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/mobile/team3-mobile/team3-mobile.webp    1x,
+                    ./image/img/mobile/team3-mobile/team3-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/mobile/team3-mobile/team3-mobile.jpg    1x,
+                    ./image/img/mobile/team3-mobile/team3-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/img/mobile/team3-mobile/team3-mobile.jpg"
+                  alt="Frontend Developer"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
-                <h3 class="team-list__title">Николай Тарасов</h3>
+                <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -285,9 +552,62 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./image/emp4.jpg" alt="UI Designer" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/img/desktop/team4-desktop/team4-desktop.webp    1x,
+                    ./image/img/desktop/team4-desktop/team4-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/desktop/team4-desktop/team4-desktop.jpg    1x,
+                    ./image/img/desktop/team4-desktop/team4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/tablet/team4-tablet/team4-tablet.webp    1x,
+                    ./image/img/tablet/team4-tablet/team4-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/tablet/team4-tablet/team4-tablet.jpg    1x,
+                    ./image/img/tablet/team4-tablet/team4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/img/mobile/team4-mobile/team4-mobile.webp    1x,
+                    ./image/img/mobile/team4-mobile/team4-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/img/mobile/team4-mobile/team4-mobile.jpg    1x,
+                    ./image/img/mobile/team4-mobile/team4-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/img/mobile/team4-mobile/team4-mobile.jpg"
+                  alt="UI Designer"
+                />
+              </picture>
+
               <div class="team-list__wrapper">
-                <h3 class="team-list__title">Михаил Ермаков</h3>
+                <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text" lang="en">UI Designer</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -324,9 +644,10 @@
           </ul>
         </div>
       </section>
+
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
               <a href="" class="clients-list__link">
@@ -391,7 +712,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
+                  <span class="location"> м. Київ, пр-т Лесі Українки, 26</span>
                 </a>
               </li>
               <li class="adress-list__item">
@@ -413,7 +734,7 @@
         </div>
 
         <div class="social-footer-wrap">
-          <p class="social-footer-title">присоединяйтесь</p>
+          <p class="social-footer-title">Приєднуйтеся</p>
           <ul class="social-network">
             <li class="social-network__item">
               <a
@@ -459,7 +780,7 @@
         </div>
         <form class="subscription">
           <label class="subscription__label">
-            <span class="subscription__title">Подпишитесь на рассылку</span>
+            <span class="subscription__title">Підпишіться на розсилку</span>
             <input
               type="email"
               name="E-mail"
@@ -469,11 +790,12 @@
             />
           </label>
           <button type="submit" class="subscription-submit-btn">
-            Подписаться
+            Підписатися
           </button>
         </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="modal-btn-close" type="button" data-modal-close>
@@ -484,11 +806,11 @@
 
         <form class="modal-form js-speaker-form">
           <b class="modal-form__title"
-            >Оставьте свои данные, мы вам перезвоним</b
+            >Залишіть свої дані, ми вам передзвонимо</b
           >
 
           <label class="modal-form__label">
-            <span class="modal-form__label-desc">Имя</span>
+            <span class="modal-form__label-desc">Ім'я</span>
             <span class="modal-form__input-wrapper">
               <input
                 type="text"
@@ -520,7 +842,7 @@
             </span>
           </label>
           <label class="modal-form__label">
-            <span class="modal-form__label-desc">Почта</span>
+            <span class="modal-form__label-desc">Пошта</span>
             <span class="modal-form__input-wrapper">
               <input
                 type="email"
@@ -534,10 +856,10 @@
             </span>
           </label>
           <label class="modal-form__label modal-form__label--coment">
-            <b class="modal-form__label-desc">Комментарий</b>
+            <b class="modal-form__label-desc">Коментар</b>
             <textarea
               name="coment-content"
-              placeholder="Введите текст"
+              placeholder="Введіть текст"
               class="modal-form__input modal-form__input--coment"
             ></textarea>
           </label>
@@ -551,16 +873,17 @@
             </span>
 
             <span class="agreemeet-title">
-              Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="agreemeet-link">Условия договора</a>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="agreemeet-link">Умови договору</a>
             </span>
           </label>
 
-          <button type="submit" class="modal-btn-send">Отправить</button>
+          <button type="submit" class="modal-btn-send">Надіслати</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

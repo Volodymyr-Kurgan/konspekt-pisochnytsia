@@ -1,19 +1,34 @@
-@import "./utils/variables";
-@import "./utils/_visually-hidden";
+@import "./utilites/variables";
+@import "./utilites/visually-hidden";
+@import "./utilites/mixins";
+@import "./utilites/placeholders";
 
 @import "./base/common";
 @import "./base/section";
 @import "./base/container";
 
-@import "./components/modal-btn";
+@import "./components/logo";
+@import "./components/mobile-menu-open";
+@import "./components/mobile-menu";
+@import "./components/hero-title";
 @import "./components/title";
+@import "./components/menu-nav";
+@import "./components/contact_info";
+@import "./components/social-links";
+@import "./components/hero-button";
 @import "./components/backdrop";
 @import "./components/modal-window";
 @import "./components/modal-form";
+@import "./components/subscription-form";
+@import "./components/card-set";
+@import "./components/gallery__ice";
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/about";
+@import "./layout/benefit";
+@import "./layout/activity";
 @import "./layout/team";
 @import "./layout/clients";
+@import "./layout/portfolio";
 @import "./layout/footer";
+@import "./layout/gallery";

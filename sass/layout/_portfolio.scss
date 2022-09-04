@@ -1,9 +1,27 @@
-
 .portfolio-filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+}
+
+@media screen and (max-width:1199px) {
+  .portfolio-filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .portfolio-filter {
+    margin-bottom: 40px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .portfolio-filter {
+    justify-content: center;
+  }
 }
 
 .portfolio-filter__btn {
