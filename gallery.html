@@ -22,75 +22,55 @@
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/product.css" />
   </head>
 
   <body>
-    <section class="gallery">
+    <section class="products">
       <div class="container">
-        <h2 class="section__title visually-hidden">Gallery</h2>
-        <div class="backround_main"></div>
-
-        <div class="container">
-          <div class="background_ice">
-            <ul class="gallery__pictures">
-              <li class="gallery__picture">
-                <picture>
-                  <source
-                    srcset="
-                      ./image/img/desktop/team1-desktop/team1-desktop.webp    1x,
-                      ./image/img/desktop/team1-desktop/team1-desktop@2x.webp 2x
-                    "
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./image/img/desktop/team1-desktop/team1-desktop.jpg    1x,
-                      ./image/img/desktop/team1-desktop/team1-desktop@2x.jpg 2x
-                    "
-                    media="(min-width: 1200px)"
-                  />
-
-                  <source
-                    srcset="
-                      ./image/img/tablet/team1-tablet/team1-tablet.webp    1x,
-                      ./image/img/tablet/team1-tablet/team1-tablet@2x.webp 2x
-                    "
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./image/img/tablet/team1-tablet/team1-tablet.jpg    1x,
-                      ./image/img/tablet/team1-tablet/team1-tablet@2x.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                  />
-
-                  <source
-                    srcset="
-                      ./image/img/mobile/team1-mobile/team1-mobile.webp    1x,
-                      ./image/img/mobile/team1-mobile/team1-mobile@2x.webp 2x
-                    "
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./image/img/mobile/team1-mobile/team1-mobile.jpg    1x,
-                      ./image/img/mobile/team1-mobile/team1-mobile@2x.jpg 2x
-                    "
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    src="./image/img/mobile/team1-mobile/team1-mobile.jpg"
-                    alt="Product Designer"
-                  />
-                </picture>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <p class="products__overtitle">100% natural</p>
+        <h2 class="products__title">products</h2>
+        <ul class="product-cards">
+          <li class="product-cards__item product-cards__item-first list">
+            <div class="product-cards__wrap-first"></div>
+            <h3 class="product-cards__title">ice cream</h3>
+            <p class="product-cards__text">
+              Soft ice cream with a delicate taste. Made with milk, cream, sugar
+              and natural stabilizer
+            </p>
+            <button class="product-cards__button" type="button">
+              <svg class="product-cards__icon">
+                <use href="/src/images/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="product-cards__item product-cards__item-second list">
+            <div class="product-cards__wrap-second"></div>
+            <h3 class="product-cards__title">ice coffee</h3>
+            <p class="product-cards__text">
+              Fragrant invigorating drink created from 100% natural ingredients
+              without the use of preservatives and flavor enhancers
+            </p>
+            <button class="product-cards__button" type="button">
+              <svg class="product-cards__icon">
+                <use href="/src/images/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="product-cards__item product-cards__item-third list">
+            <div class="product-cards__wrap-third"></div>
+            <h3 class="product-cards__title">milkshakes</h3>
+            <p class="product-cards__text">
+              Sweet drinks based on milk and ice cream, supplemented with
+              syrups, fruits, berries and other sweets of your choice
+            </p>
+            <button class="product-cards__button" type="button">
+              <svg class="product-cards__icon">
+                <use href="/src/images/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -106,7 +86,7 @@
                 <picture>
                   <source
                     srcset="
-                      ./image/gallery/desktop/gd/iced1x.webp   1x,
+                      ./image/gallery/desktop/gd/iced1.webp    1x,
                       ./image/gallery/desktop/gd/iced1@2x.webp 2x
                     "
                     media="(min-width: 1200px)"
@@ -114,7 +94,7 @@
                   />
                   <source
                     srcset="
-                      ./image/gallery/desktop/gd/iced1x.jpg   1x,
+                      ./image/gallery/desktop/gd/iced1.jpg    1x,
                       ./image/gallery/desktop/gd/iced1@2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
@@ -122,7 +102,7 @@
 
                   <source
                     srcset="
-                      .image/gallery/tablet/gt/icet1.webp     1x,
+                      ./image/gallery/tablet/gt/icet1.webp    1x,
                       ./image/gallery/tablet/gt/icet1@2x.webp 2x
                     "
                     media="(min-width: 768px)"

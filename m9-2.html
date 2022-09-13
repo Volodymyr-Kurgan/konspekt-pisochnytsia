@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Модуль 6</title>
+    <title>[JavaScript:#22] Модуль 1. Переменные и ветвления</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,17 +18,18 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
-     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- HEADER -->
     <header class="header content">
       <div class="container nav">
-        <a href="./archive/index.html" class="logo link"> <span class="accent">ШоТамШоТам</span>ТацТацтац</a>
+        <a href="./archive/index.html" class="logo link">
+          <span class="accent">ШоТамШоТам</span>ТацТацтац</a
+        >
         <nav class="menu">
           <ul class="menu-list list">
-
             <li class="menu-item">
               <a class="menu-link" href="./m0sand.html">Пісочниця</a>
             </li>
@@ -48,7 +49,6 @@
               <a class="menu-link" href="./m8-2.html">M8-2</a>
             </li>
 
-
             <li class="menu-item">
               <a class="menu-link" href="./m9-1.html">M9-1</a>
             </li>
@@ -64,456 +64,173 @@
             <li class="menu-item">
               <a class="menu-link" href="./m9-4.html">M9-4</a>
             </li>
-
           </ul>
         </nav>
-
-        
       </div>
     </header>
 
     <main>
-      <h1 class="hero-title">Модуль 6</h1>
-
-      <section class="klasniy-clas">
-        <div class="container">
-          <h2 class="about-title">
-            [FSon61] Модуль 6. Урок 2 - Розмітка форм. Стилізація форм
-          </h2>
-          
-      
-          <p class="text">Привіт котики, як ваші справи?</p>
-
-          <p class="text">Пісофшетниця</p>
-          <p class="text">Конспект Репети (16 серпня 2022)</p>
-
-          Обычно так делается:
-        
-          <form class="js-speaker-form">
-            <label for="name">Имя</label>
-            <input type="text" name="user-name" id="name" />
-          </form>
-
-        
-          Но можно так
-          
-          <form class="js-speaker-form">
-            <label>
-              Имя
-              <input type="text" name="name" />
-            </label>
-          </form>
-          
-          Tel - это одно из значений
-          <form class="js-speaker-form">
-            <label for="tel">Телефон</label>
-            <input type="text" name="tel" id="tel" />
-          
-            <p>Сабмит - это отправка. = это кнопка для отправки формы</p>
-
-            
-
-            <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" />
-
-            <button type="submit">Оставить заявку</button>
-            <p>есть ещё такая штука:</p>
-            <input type="button" value="Оставить заявку" />
-          </form>
-        
-          чекбоксы - нужно чтобы имя было одно и тоже = топик = а не топик 1 2 3 как в
-          примере :
-      
-          <input type="checkbox" name="topic 1" value="html" id="html" />
-          <label for="html">HTML</label>
-          <input type="checkbox" name="topic 2" value="css" id="css" />
-          <label for="css">CSS</label>
-          <input type="checkbox" name="topic 3" value="se" id="se" />
-          <label for="se">Something else</label>
-        
-          есть очень класный Филдсет = очень семантический )))
-        
-          = группа элементов = одно свойство описывают
-        
-          <fieldset>
-            <input type="checkbox" name="topic " value="html" id="html" />
-            <label for="html">HTML</label>
-            <input type="checkbox" name="topic " value="css" id="css" />
-            <label for="css">CSS</label>
-            <input type="checkbox" name="topic " value="se" id="se" />
-            <label for="se">Something else</label>
-          </fieldset>
-
-          Но лучше радиобатон
-
-          <input type="radio" name="experience" value="junior" />
-          <label for="junior">Junior</label>
-          <input type="radio" name="experience" value="middle" />
-          <label for="junior">Middle</label>
-          <input type="radio" name="experience" value="senior" />
-          <label for="junior">Senior</label>
-          <button type="submit">Оставить заявку</button>
-          
-          <input type="time" name="time" id="" />
-
-      
-          <input type="datetime-local" name="time" id="" />
-           <img
-      src="./images/2022-08-16/001.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    
-     <p class="text"> трошки Олексія у наше життя
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NBvJEX0XUlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-   
-
-    <img src="" alt="" />
-
-    <img
-      src="./images/2022-08-16/001.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    <img
-      src="./images/2022-08-16/002.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    <img
-      src="./images/2022-08-16/003.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    <img
-      src="./images/2022-08-16/004.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    <img
-      src="./images/2022-08-16/005.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    <img
-      src="./images/2022-08-16/006.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-
-
-  
-    <form class="modal-form">
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc"></span> ім'я*
-        <input type="text" class="modal-form-input" />
-      </label>
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc"></span> Телефон*
-        <input type="text" class="modal-form-input" />
-      </label>
-
-   
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc"></span> Сообщєніє
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          class="modal-form-message"
-          placeholder="Напиши шось, братан"
-        ></textarea>
-      </label>
-      <input id="user-fuck-the-police" type="text" class="modal-form-check" />
-      <label for="user-fuck-the-police" class="modal-form-check-desk"
-        >Так, я прочитав ті багато літер <a href="">Шось десь</a>
-      </label>
-      <button class="modal-form-submit"></button>
-   
-    </form>
-   
-
-
-
-
-    <img
-      src="./images/2022-08-16/007.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-
-    <img
-      src="./images/2022-08-16/008.png"
-      alt="Скорочення Спан Модал бла бла бла"
-    />
-    <p class="text">Проставляємо правильні артібути з атрібутами ))))  нашим елементам форми
-
-         </p> 
-         Наприклад якщо ТЕЛ = у користувача
-             </p>
-             зміниться розкладка клавіатури
-
-            </p>
-            <p class="text">Ще є "Захист від дурника" = щоб
-                            користувач не міг відправити порожню форму = для цього Є = required (дизайнер показав зірочками)
-  <img src="./images/2022-08-16/010.png" alt="Зображення для конспекту" />
-         </p> 
-
-            <p class="text"> ще є така штука = 
-                            ми ввели діапазони. Тепер, наприклад, користувач не може ввести цифри - тільки літери = діапазон символів тут:
-
-            </p>
-         
-
-         <img src="./images/2022-08-16/012.png" alt="Зображення для конспекту" />
-для телефону:      
-         <img src="./images/2022-08-17/001.png" alt="Зображення для конспекту" />
-вказуємо в якому форматі:        
-         <img src="./images/2022-08-17/002.png" alt="Зображення для конспекту" />
-текстерія = нейм = юзер-меседж:         
-         <img src="./images/2022-08-17/003.png" alt="Зображення для конспекту" />
-ширину та висоту за замовчування видаляємо:
-           <img src="./images/2022-08-17/004.png" alt="Зображення для конспекту" />
-PAUSE
-           <img src="./images/2022-08-17/005.png" alt="Зображення для конспекту" />
-
-           
-           ===========   18 серпня 2022 = продовжуємо ============================================
-
-           <p class="text"> Ей, пацанчік = тримай ще один СПАНЧИК:
-             <img src="./images/2022-08-18/001.png" alt="Зображення для конспекту" />
-
-             не просто айкон - а інпут айкон
-
-             <img src="./images/2022-08-18/002.png" alt="Зображення для конспекту" />
-
-             а-ля Іконочка:
-             <img src="./images/2022-08-18/003.png" alt="Зображення для конспекту" />
-              НА ЕЛЕМЕНТ ФОРМИ РОБЛЯТЬ ТІЛЬКИ ФОКУС
-           = ховер НЕ роблять 
-           <br>
-
-           При фокусі - змінюється Бордер колор:
-
-
-           <img src="./images/2022-08-18/004.png" alt="Зображення для конспекту" />
-           <br>
-
-           Фарбуємо сусідів... що заважали спать )))
-
-
-           <img src="./images/2022-08-18/005.png" alt="Зображення для конспекту" />
-
-
-           <br>
-
-           Псевдоелемент Плейсхолдер
-
-
-           <img src="./images/2022-08-18/006.png" alt="Зображення для конспекту" />
-
-
-           <br>
-           Бо! Якщо зробити так:
-
-           <img src="./images/2022-08-18/007.png" alt="Зображення для конспекту" />
-
-           = то капсолоком буде не тільки Плейсхолдер, а й текст, який вводитиме користувач
-
-           <br>
-            <br>
-
-           Для Бефо та Авто = контент = обов'язкова властивість!
-
-
-           <img src="./images/2022-08-18/008.png" alt="Зображення для конспекту" />
-  <br>
-            <br>
-
-           Через Бекграунд Імедж = Галочка
-           <br>
-           Але! До спрайту додавати не потрібно... = просто в папку імеджіс, <br> щоб потім спокійно можна достучатись
-
-           <img src="./images/2022-08-18/009.png" alt="Зображення для конспекту" />
-
-             <br>
-            <br>
-
-         Оригінальний квадратик ховаємо через віжуал хіден
-
-           <img src="./images/2022-08-18/010.png" alt="Зображення для конспекту" />
-
-
-                       <br>
-
-         Фейковий фокус (тіпа ілюзія - це насправді )))) )
-
-           <img src="./images/2022-08-18/011.png" alt="Зображення для конспекту" />
-
-
-
-
-
-
-           </p>
-
-          
-
-           
-
-
-
-  
-  
-              <div>
-
-                <label class="modal-form-field">
-            <span class="modal-form-input-desc"> Имя* </span>
-            <span class="modal-form-input-wrapper">
-              <input type="text" name="user_name" class="modal-form-input" required="" pattern="[a-zA-Zа-яА-Я]+" minlength="2">
-              <span class="modal-form-input-icon"></span>
-            </span>
-          </label>
-                
-              </div>
-
-    <form class="modal-form">
-      <label class="modal-form-field">
-
-
-        <span class="modal-form-input-desc">ім'я*</span> 
-            <span class="modal-form-input-wrapper">
-        <input 
-        type="text" 
-        name="user_name" 
-        class="modal-form-input" 
-        required pattern="^[a-zA-Za-яА-Я]+"
-        minlength="2" 
-        />
-         <span class="modal-form-input-icon"></span>
-         </span>
-      </label>
-    
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc">Телефон*</span> 
-        <input 
-        type="tel" 
-        name="user_phone" 
-        class="modal-form-input" 
-        required
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="xxx-xxx-xx-xx"
-        />
-      </label>
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc">Сообщєніє</span> 
-
-
-
-        <textarea
-          name="user_message"
-          class="modal-form-message"
-          placeholder="Напиши шось, братан"
-        ></textarea>
-      </label>
-     <input
-            id="user-policy"
-            type="checkbox"
-            name="user_policy"
-            class="modal-form-check visually-hidden"
-          />
-      <label for="user-policy" class="modal-form-check-desc"
-        >Так, я прочитав ті багато літер <a href="">Шось десь</a>
-      </label>
-      <button type="submit" class="modal-form-submit">Відправити</button>
-    </form>
-
-
+      <h1 class="hero-title">Проєкт</h1>
+
+      <div class="container">
+        <h2 class="about-title">
+          [JavaScript:#22] Модуль 1. Переменные и ветвления
+        </h2>
+
+        <p class="text">[JavaScript:#22] Модуль 1. Переменные и ветвления</p>
+        <p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/WmfSe8S8vDs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+
+        <p class="text">
+          <a class="menu-link" href="https://youtu.be/WmfSe8S8vDs"
+            >Посилання на відео</a
+          >
+        </p>
+
+        <p></p>
+        <img src="./images/2022-09-13/001.png" alt="Konspekt" />
+        <br />
+        <p>Установка:</p>
+        <img src="./images/2022-09-13/002.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/003.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/004.png" alt="Konspekt" />
+        <br />
+        <p>Справочник:</p>
+        <img src="./images/2022-09-13/005.png" alt="Konspekt" />
+        <br />
+        <p>Ссылка на него:</p>
+        <p class="text">
+          <a class="menu-link" href="https://devdocs.io/">Справочник</a>
+        </p>
+
+        <p>Это сборник официальных рекомендаций</p>
+        <p>Например Стринг:</p>
+
+        <img src="./images/2022-09-13/006.png" alt="Konspekt" />
+        <br />
+
+        <h2 class="about-title">
+          Каждую точечку, каждый символ, каждую строку кода = нужно понимать!
+        </h2>
+
+        <p>Например есть переменная А:</p>
+
+        <img src="./images/2022-09-13/007.png" alt="Konspekt" />
+        <br />
+        <p>Красное Ведро = это переменная А</p>
+        <p>Когда всё сливается в память = двух переменных быть не может!</p>
+
+        <img src="./images/2022-09-13/008.png" alt="Konspekt" />
+        <br />
+        <p>В паке Консоль = мы будем видеть "Вывод" из нашего скрипта:</p>
+        <img src="./images/2022-09-13/009.png" alt="Konspekt" />
+        <br />
+        <p>Вот мы видим = индентификатор А был уже объявлен:</p>
+        <img src="./images/2022-09-13/010.png" alt="Konspekt" />
+        <br />
+        <p>Вот он справа - во втором скрипте</p>
+        <img src="./images/2022-09-13/011.png" alt="Konspekt" />
+        <br />
+        <p>
+          Есть такая штука - как Модуль = область видимости = закрывает
+          переменные для исключения конфликта
+        </p>
+        <img src="./images/2022-09-13/012.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/013.png" alt="Konspekt" />
+        <br />
+        <p>Теперь всё хорошо работает</p>
+        <img src="./images/2022-09-13/014.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/015.png" alt="Konspekt" />
+        <br />
+        <p>Поэтому все наши скрипты помещаем в модуль</p>
+        <img src="./images/2022-09-13/016.png" alt="Konspekt" />
+        <br />
+        <p>Инструкция обновления переменных:</p>
+        <img src="./images/2022-09-13/017.png" alt="Konspekt" />
+        <br />
+        <p>
+          Это существиетльное = Эйдж = возраст. = 10 это операция присвоения
+        </p>
+        <img src="./images/2022-09-13/018.png" alt="Konspekt" />
+        <br />
+
+        <p>
+          Могут быть любые символы - это будет просто строка = это имя
+          пользователя
+        </p>
+        <img src="./images/2022-09-13/019.png" alt="Konspekt" />
+        <br />
+        <p>ШудКонфырм = надо ли подтверждать</p>
+        <img src="./images/2022-09-13/020.png" alt="Konspekt" />
+        <br />
+        <p>ИзОпен = Это, как выключатель света = надо ли выключать?</p>
+        <img src="./images/2022-09-13/021.png" alt="Konspekt" />
+        <br />
+        <p>
+          Логирование с методом Консоль. то, что в скобочках называется Аргумент
+        </p>
+        <p>все переменные, которые будем изменять = добавляем через лог:</p>
+        <img src="./images/2022-09-13/022.png" alt="Konspekt" />
+        <br />
+        <p>Через запятую можно передать ещё одно значение</p>
+        <img src="./images/2022-09-13/023.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/024.png" alt="Konspekt" />
+        <br />
+        <p>
+          Есть ещё такая штука = это значит, что исполнение скрипта
+          заблокировано
+        </p>
+        <img src="./images/2022-09-13/025.png" alt="Konspekt" />
+        <br />
+        <p>На примере До и После видно, что он сбрасывает и начинает заново:</p>
+        <img src="./images/2022-09-13/026.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/027.png" alt="Konspekt" />
+        <br />
+        <p>Для подтверждения:</p>
+        <img src="./images/2022-09-13/028.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/029.png" alt="Konspekt" />
+        <br />
+
+        <img src="./images/2022-09-13/030.png" alt="Konspekt" />
+        <br />
+        <p>Пауза:</p>
+        <img src="./images/2022-09-13/031.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/001.png" alt="Konspekt" />
+        <br />
+        <p></p>
+        <img src="./images/2022-09-13/001.png" alt="Konspekt" />
+        <br />
       </div>
-
-      </section>
-
-
-      <section class="section features">
-        <div class="container">
-          <h2 class="features-title visually-hidden">
-            Все одно ніхто не бачить
-          </h2>
-          <ul class="features-list list">
-            <li class="features-item">
-              <div class="features-icon-wrapper">
-                <svg class="features-icon">
-                  <use href="./images/sprite.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="content-title">УВАГА ДО АГАВИ</h3>
-              <p class="content">Нехай тут буде ця картинка.</p>
-            </li>
-
-
-
-
-          </ul>
-        </div>
-      </section>
-            <!-- HERO (hero = background) -->
-      <section class="her"> 
-        <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="modal-btn-open" type="button" data-modal-open>
-            Заказать услугу
-          </button>
-
-
-          
-        </div>
-      </section>
     </main>
-        <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-btn-close" type="button" data-modal-close>
-          <svg class="modal-button-icon-close">
-            <use href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
-         <form class="modal-form">
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc"></span> ім'я*
-        <input 
-        type="text" 
-        name="user_name" 
-        class="modal-form-input" 
-        required pattern="^[a-zA-Za-яА-Я]+$"
-        minlength="2" не більше двух символів
-        />
-        
-      </label>
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc"></span> Телефон*
-        <input 
-        type="tel" 
-        name="user_phone" 
-        class="modal-form-input" 
-        required
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="xxx-xxx-xx-xx"
-        />
-      </label>
-      <label class="modal-form-field">
-        <span class="modal-form-input-desc">Сообщєніє</span> 
-        <textarea
-          name="user_message"
-          id=""
-       
-          class="modal-form-message"
-          placeholder="Напиши шось, братан"
-        ></textarea>
-      </label>
-      <input id="user-fuck-the-police" type="text" class="modal-form-check" />
-      <label for="user-fuck-the-police" class="modal-form-check-desk"
-        >Так, я прочитав ті багато літер <a href="">Шось десь</a>
-      </label>
-      <button type="submit" class="modal-form-submit">Відправити</button>
-    </form>
+    <footer>
+      <div class="container">
+        <img class="yoda" src="./images/2022-08-23/555.png" alt="Konspekt" />
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </footer>
   </body>
 </html>

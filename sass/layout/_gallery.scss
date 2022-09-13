@@ -94,11 +94,41 @@
 
 // ===
 
-.gallery__pictures {
+// .gallery__pictures {
+//   display: flex;
+//   justify-content: center;
+//   position: relative;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -280px);
+// }
+
+=== .gallery__pictures {
   display: flex;
-  justify-content: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -280px);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -100;
+}
+
+.product-cards__wrap-first,
+.product-cards__wrap-second,
+.product-cards__wrap-third {
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -100;
+
+  &::before {
+    content: "";
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: block;
+    position: relative;
+    top: -11;
+  }
 }
